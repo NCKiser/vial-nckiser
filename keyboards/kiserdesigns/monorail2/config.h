@@ -18,13 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#include "config_common.h"
-
-#define VENDOR_ID       0x4B44
-#define PRODUCT_ID      0x4D72
-#define DEVICE_VER 	0x0002
-#define MANUFACTURER    Kiser Designs
-#define PRODUCT         Monorail V2
 
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 12
@@ -34,15 +27,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LED2_PIN GP27
 
 // flip the 0 to a 1 to go back to a regular caps lock indicator, or remove these 2 lines entirely to eliminate the caps lock indicator function
-#define LED_CAPS_LOCK_PIN GP25
-#define LED_PIN_ON_STATE 1
 
 #define MATRIX_ROW_PINS { GP9, GP1, GP4, GP5, GP28 }
 #define MATRIX_COL_PINS { GP23, GP22, GP21, GP20, GP19, GP18, GP17, GP16, GP10, GP11, GP6, GP0 }
 
-#define DIODE_DIRECTION COL2ROW
 
-#define TAPPING_TERM 200
 
 #define ENCODERS_PAD_A { GP12 }
 #define ENCODERS_PAD_B { GP24 }
@@ -51,11 +40,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define ENCODER_RESOLUTIONS { 4 }
 
-#define RGB_DI_PIN GP29
 //#define RGB_DI_PIN GP3
 #define DRIVER_LED_TOTAL 12
 #define RGB_MATRIX_LED_COUNT 12
-#define RGBLED_NUM 12
+#define WS2812_DI_PIN GP29
 
 #define RGB_MATRIX_EFFECTS
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS

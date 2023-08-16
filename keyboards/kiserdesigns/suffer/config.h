@@ -16,15 +16,14 @@
 
 #pragma once
 
-#include "config_common.h"
-
 /* USB Device descriptor parameter */
 
 /* key matrix size */
-#define MATRIX_ROWS 2
-#define MATRIX_COLS 7
+#define MATRIX_ROWS 3
+#define MATRIX_COLS 6
 
-#define DIRECT_PINS { {D1, D0, F5, F4, D4, C6, F7}, {F6, D7, E6, B2, B3, B1, B4} }
+#define MATRIX_ROW_PINS { E6, B0, B3 }
+#define MATRIX_COL_PINS { D5, D3, D2, F4, D1, D0 }
 
 //#define DIODE_DIRECTION COL2ROW
 

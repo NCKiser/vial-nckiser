@@ -1,6 +1,6 @@
 {
     "manufacturer": "Kiser Designs",
-    "keyboard_name": "GitPad",
+    "keyboard_name": "Suffer",
     "maintainer": "qmk",
     "bootloader": "atmel-dfu",
     "bootmagic": {
@@ -14,9 +14,10 @@
     "url": "",
     "usb": {
         "device_version": "0.0.1",
-        "pid": "0x4770",
+        "pid": "0x5346",
         "vid": "0x4B44"
     },
+    "diode_direction": "COL2ROW",
     "layouts": {
         "LAYOUT": {
             "layout": [

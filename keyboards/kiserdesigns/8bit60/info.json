@@ -1,0 +1,32 @@
+{
+    "manufacturer": "swishy",
+    "keyboard_name": "8_Bit_60",
+    "bootloader": "rp2040",
+    "bootmagic": {
+        "enabled": true
+    },
+    "diode_direction": "COL2ROW",
+    "encoder": {
+        "enabled": false
+    },
+    "mouse_key": {
+        "enabled": true
+    },
+    "processor": "RP2040",
+    "rgb_matrix": {
+        "driver": "ws2812",
+        "led_count": 33
+    },
+    "rgblight": {
+        "led_count": 33,
+        "pin": "GP19"
+    },
+    "usb": {
+        "device_version": "0.0.1",
+        "pid": "0x8626",
+        "vid": "0x4B44"
+    },
+    "ws2812": {
+        "driver": "vendor"
+    }
+}

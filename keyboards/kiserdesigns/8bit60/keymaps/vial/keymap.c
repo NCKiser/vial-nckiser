@@ -2,11 +2,12 @@
 
 #include QMK_KEYBOARD_H
 
-void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 	rgb_matrix_set_color(0, RGB_OFF);
     if (host_keyboard_led_state().caps_lock) {
         rgb_matrix_set_color(0, RGB_RED);
     }
+	return true;
 }
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

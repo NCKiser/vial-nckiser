@@ -4,15 +4,8 @@
 
 /* Comment or uncomment the next line to change the orientation of the pro-micro */
 
-#define BOOTMAGIC_LITE_ROW 0
-#define BOOTMAGIC_LITE_COLUMN 0
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0x4B44
-#define PRODUCT_ID      0x8626
-#define DEVICE_VER      0x0001
-#define MANUFACTURER    swishy
-#define PRODUCT         8_Bit_60
 
 /* key matrix size */
 #define MATRIX_ROWS 5
@@ -21,7 +14,6 @@
 #define MATRIX_ROW_PINS { GP21, GP16, GP0, GP13, GP14 }
 #define MATRIX_COL_PINS { GP20, GP18, GP1, GP2, GP3, GP4, GP5, GP6, GP7, GP8, GP9, GP10, GP11, GP12, GP23 }
 
-#define DIODE_DIRECTION COL2ROW
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
@@ -39,10 +31,8 @@
 
 
 // define RGB
-#define RGB_DI_PIN GP19
-#define RGBLED_NUM 33
 #define DRIVER_LED_TOTAL RGBLED_NUM
-#define RGB_MATRIX_LED_COUNT RGBLED_NUM
+#define WS2812_DI_PIN GP19
 
 
 #define RGB_MATRIX_EFFECTS

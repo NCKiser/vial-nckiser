@@ -1,6 +1,6 @@
 {
     "manufacturer": "Kiser Designs",
-    "keyboard_name": "Suffer",
+    "keyboard_name": "Smidge",
     "maintainer": "qmk",
     "bootloader": "rp2040",
     "bootmagic": {

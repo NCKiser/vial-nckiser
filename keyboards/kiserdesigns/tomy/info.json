@@ -1,0 +1,64 @@
+{
+    "manufacturer": "Kiser Designs",
+    "keyboard_name": "Tomy",
+    "maintainer": "qmk",
+    "bootloader": "stm32-dfu",
+    "bootmagic": {
+        "enabled": true
+    },
+    "height": 3,
+    "matrix_pins": {
+        "direct": [
+            [ "A7", "B0", "B1", "B2", "B10","B11"],
+            [ "A6", "A5", "A4", "A3", "A2", "A1" ],
+            [ "F1", "F0", "C15","C14","C13","B3" ]
+        ]
+    },
+    "mouse_key": {
+        "enabled": true
+    },
+    "processor": "STM32F072",
+    "rgb_matrix": {
+        "driver": "ws2812",
+        "led_count": 16
+    },
+    "rgblight": {
+        "led_count": 56,
+        "pin": "GP5"
+    },
+    "url": "http://www.keyboard-layout-editor.com/#/gists/9a8e972048b516e5b29cfb68b049d7f8",
+    "usb": {
+        "device_version": "0.0.1",
+        "pid": "0x546D",
+        "vid": "0x4B44"
+    },
+    "width": 6,
+    "ws2812": {
+        "pin": "A15",
+        "driver": "bitbang"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"x": 0, "y": 0},
+                {"x": 1, "y": 0},
+                {"x": 2, "y": 0},
+                {"x": 3, "y": 0},
+                {"x": 4, "y": 0},
+                {"x": 5, "y": 0},
+                {"x": 0, "y": 1, "w": 1.25},
+                {"x": 1.25, "y": 1},
+                {"x": 2.25, "y": 1},
+                {"x": 3.25, "y": 1},
+                {"x": 4.25, "y": 1},
+                {"x": 5.25, "y": 1},
+                {"x": 0, "y": 2, "w": 1.75},
+                {"x": 1.75, "y": 2},
+                {"x": 2.75, "y": 2},
+                {"x": 3.75, "y": 2},
+                {"x": 4.75, "y": 2},
+                {"x": 5.75, "y": 2}
+            ]
+        }
+    }
+}

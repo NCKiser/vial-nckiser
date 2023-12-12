@@ -14,8 +14,7 @@
         "mousekey": true,
         "nkro": true
     },
-    "height": 3,
-    "matric_pins": {
+    "matrix_pins": {
         "direct": [
             [ "B14", "B15", "A8",  "A14", "A0", "A2" ],
             [ "B13", "B12", "B11", "B0",  "A4", "A3" ],
@@ -28,7 +27,6 @@
         "pid": "0x5376",
         "vid": "0x4B44"
     },
-    "width": 6,
     "layouts": {
         "LAYOUT": {
             "layout": [

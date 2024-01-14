@@ -5,33 +5,35 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     HSV hsv = {0, 255, 0};
     if (!host_keyboard_led_state().caps_lock) {
         switch (get_highest_layer(layer_state|default_layer_state)) {
+
+            // reference color wheel: https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgblight.md
             case 1:
-                hsv.h = 0;
+                hsv.h = 156;
                 hsv.v = 255;
                 break;
             case 2:
-                hsv.h = 85;
+                hsv.h = 96;
                 hsv.v = 255;
                 break;
             case 3:
-                hsv.h = 171;
+                hsv.h = 180;
                 hsv.v = 255;
                 break;
             case 4:
-                hsv.h = 43;
+                hsv.h = 201;
                 hsv.v = 255;
                 break;
             case 5:
-                hsv.h = 128;
+                hsv.h = 85;
                 hsv.v = 255;
                 break;
             case 6:
-                hsv.h = 213;
+                hsv.h = 40;
                 hsv.v = 255;
                 break;
             default: //  for any other layers, or the default layer
                 hsv.h = 0;
-                hsv.v = 0;
+                hsv.v = 180;
                 break;
             };
     }

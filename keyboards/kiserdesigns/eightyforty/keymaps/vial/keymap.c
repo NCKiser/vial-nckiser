@@ -32,7 +32,8 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
                 hsv.v = 255;
                 break;
             default: //  for any other layers, or the default layer
-                hsv.h = 0;
+                hsv.h = 10;
+                // hsv.s = 235;
                 hsv.v = 180;
                 break;
             };

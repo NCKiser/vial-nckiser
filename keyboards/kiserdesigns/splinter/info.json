@@ -26,8 +26,8 @@
         "encoder": {
             "right": {
                 "rotary": [
-                    {"pin_a": "GP8", "pin_b": "GP9"},
-                    {"pin_a": "GP7", "pin_b": "GP6"}
+                    {"pin_a": "GP9", "pin_b": "GP8"},
+                    {"pin_a": "GP6", "pin_b": "GP7"}
                 ]
             }
         },
@@ -59,10 +59,10 @@
     "encoder": {
         "enabled": true,
         "rotary": [
-            {"pin_a": "GP23", "pin_b": "GP24"},
-            {"pin_a": "GP22", "pin_b": "GP26"},
-            {"pin_a": "GP11", "pin_b": "GP12"},
-            {"pin_a": "GP19", "pin_b": "GP20"}
+            {"pin_a": "GP24", "pin_b": "GP23"},
+            {"pin_a": "GP26", "pin_b": "GP22"},
+            {"pin_a": "GP12", "pin_b": "GP11"},
+            {"pin_a": "GP20", "pin_b": "GP19"}
         ]
     },
     "layouts": {
@@ -124,7 +124,7 @@
                 { "matrix": [3, 3], "w": 1.25, "x": 3.5, "y": 3 },
                 { "matrix": [3, 2], "w": 1.25, "x": 5.25, "y": 3.25 },
                 { "matrix": [3, 0], "w": 1.75, "x": 6.5, "y": 3.25 },
-                
+
                 { "matrix": [7, 0], "w": 1.75, "x": 9, "y": 3.25 },
                 { "matrix": [7, 1], "w": 1.25, "x": 10.75, "y": 3.25 },
                 { "matrix": [7, 3], "w": 1.5, "x": 12.5, "y": 3 },

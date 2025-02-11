@@ -32,3 +32,22 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
               ENCODER_CCW_CW(KC_HOME, KC_END) }
 };
 #endif
+
+bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+    if (rgb_matrix_is_enabled()){
+        HSV layer_hsv = {rgb_matrix_get_hue(), ((int)rgb_matrix_get_sat()>>1)+128, rgb_matrix_get_val()}; //get the matrix hue, sat (minimum 50%), and value
+
+        layer_hsv.h += 16*get_highest_layer(layer_state|default_layer_state); //hue-shift the layer indicator based on highest layer (of 0-15 layers)
+        layer_hsv.h = layer_hsv.h % 256; //modulo 256
+
+        if (host_keyboard_led_state().caps_lock) { //if capslock is active
+            layer_hsv.s = 0; // turn indicator white
+            RGB layer_rgb = hsv_to_rgb(layer_hsv);
+            rgb_matrix_set_color(0, layer_rgb.r, layer_rgb.g, layer_rgb.b);
+        } else if (get_highest_layer(layer_state) > 0) {
+            RGB layer_rgb = hsv_to_rgb(layer_hsv);
+            rgb_matrix_set_color(0, layer_rgb.r, layer_rgb.g, layer_rgb.b);
+        }
+    }
+	return false;
+}
